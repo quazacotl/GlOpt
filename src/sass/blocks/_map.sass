@@ -1,0 +1,36 @@
+.map
+  position: relative
+  height: 500px
+  width: 100%
+  background: url("../img/map.png") center center/cover no-repeat
+  &__wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    justify-content: center
+    align-items: center
+  &__pointer
+    margin-right: 15px
+  &__address
+    background: url("../img/Address.png") 0 center/cover no-repeat
+    padding: 25px 45px
+    border-radius: 7px
+    max-width: 350px
+  &__city
+    color: $main-color
+    font-size: 16px
+    font-weight: 700
+  &__text
+    color: black
+    font-size: 14px
+    font-weight: 300
+  &__email
+    color: $main-color
+    text-decoration: underline
+    font-size: 14px
+    font-weight: 300
+    &:hover
+      color: $main-color
+

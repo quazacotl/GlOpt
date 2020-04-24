@@ -1,0 +1,267 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 920px
+
+  .promo
+    min-height: 640px
+    padding-bottom: 50px
+    &__menu-item
+      padding: 0 10px 0 6px
+    &__menu-link
+      font-size: 12px
+    &__head-1
+      font-size: 66px
+      line-height: 66px
+    &__head-2
+      font-size: 36px
+      line-height: 36px
+    &__head-3
+      font-size: 20px
+      line-height: 20px
+    &__services-item
+      padding-left: 10px
+      padding-right: 10px
+    &__text
+      font-size: 14px
+
+  .job
+    &__item
+      width: 300px
+    &__img
+      width: 100%
+    &__text
+      font-size: 13px
+
+  .delivery
+    &__wrapper
+      justify-content: space-evenly
+      flex-wrap: wrap
+    &__item
+      margin-left: 40px
+      margin-right: 40px
+
+
+  .reviews
+    &__item
+      max-width: 400px
+      margin: 0 20px
+    &__subitem
+      max-width: 220px
+
+@media (max-width: 991px)
+  .container
+    max-width: 720px
+
+  .promo
+    min-height: 400px
+    .main-button
+      &:nth-child(2)
+        display: none
+    &__tel
+      font-size: 17px
+    &__logo
+      width: 60px
+    &__head-1
+      font-size: 53px
+      line-height: 53px
+    &__head-2
+      font-size: 28px
+      line-height: 28px
+    &__head-3
+      margin-top: 20px
+      font-size: 18px
+      line-height: 18px
+    &__line
+      width: 80%
+    &__text
+      font-size: 12px
+
+  .advant
+    &__descr
+      padding-right: 10px
+
+  .job
+    &__wrapper
+      justify-content: space-around
+
+  .reviews
+    .main-subheader
+      margin: 0 30px
+    &__item
+      max-width: 500px
+      margin: 0 20px
+    &__subitem
+      display: none
+
+  .write
+    &__form
+      max-width: 695px
+    &__phone, .write__name, .write__email
+      max-width: 198px
+
+  .footer
+    .promo__contact
+      width: 483px
+    &__text
+      margin-right: 20px
+    &__politics
+      padding-left: 90px
+
+@media (max-width: 768px)
+  .container
+    max-width: 540px
+
+  .promo
+    &__cap
+      margin-left: 60px
+    &__menu
+      display: none
+    .main-button
+      display: block
+    &__menu
+      display: flex
+      position: fixed
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      top: 0
+      left: -100%
+      width: 50%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .8)
+      transition: 0.6s left
+      z-index: 1
+      &-item
+        border-right: none
+      &_active
+        left: 0
+  .hamburger
+    display: block
+    position: absolute
+    left: 10px
+    top: 30px
+    transform: translateY(-50%)
+    width: 26px
+    height: 15px
+    transition: 0.5s all
+    z-index: 1
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      margin-bottom: 5px
+      transition: 0.5s all
+    &_active
+      position: fixed
+      top: 5%
+      right: 5%
+      span
+        margin-bottom: -2px
+        &:first-child
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg)
+
+  .agent
+    &__text
+      padding: 0 25px
+
+  .write
+    &__form
+      max-width: 540px
+    &__phone, .write__name, .write__email
+      max-width: 150px
+      padding-left: 10px
+    &__message
+      padding-left: 10px
+
+  .map
+    &__address
+      padding: 5px 5px 5px 25px
+
+
+  .footer
+    .promo__cap
+      margin-left: 0
+    &__text
+      display: none
+    .promo__contact
+      max-width: 325px
+    &__politics
+      flex-grow: 0
+      padding-left: 0
+
+
+@media (max-width: 576px)
+  .container
+    max-width: 310px
+  .main-header
+    font-size: 24px
+  .main-subheader
+    font-size: 17px
+
+  .promo
+    .main-button
+      &:nth-child(2)
+        display: none
+    &__services
+      flex-wrap: wrap
+      justify-content: center
+    &__head-1
+      font-size: 34px
+      line-height: 34px
+    &__head-2
+      font-size: 20px
+      line-height: 20px
+    &__head-3
+      margin-top: 25px
+      font-size: 14px
+      line-height: 14px
+    &__text
+      font-size: 14px
+
+  .consultation
+    min-height: 450px
+    &__forma
+      flex-wrap: wrap
+    &__form
+      min-height: 270px
+    &__phone, .consultation__email
+      margin-top: 15px
+
+
+  .advant
+    &__item
+      width: 100%
+
+  .write
+    &__form-wrapper
+      flex-wrap: wrap
+    &__phone, .write__name, .write__email
+      width: 100%
+      max-width: none
+      margin-top: 5px
+    &__form
+      max-width: 310px
+
+  .map
+    max-height: 400px
+    &__address
+      width: 210px
+
+  .footer
+    .main-button
+      display: none
+    .promo__contact
+      width: 143px
+    &__makers
+      display: none
+    &__politics
+      width: 200px
+      padding-left: 0
+
+
